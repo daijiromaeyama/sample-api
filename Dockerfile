@@ -1,5 +1,7 @@
 FROM ruby:3.0.0
 
+ENV TZ Asia/Tokyo
+
 WORKDIR /app
 
 COPY Gemfile /app/
