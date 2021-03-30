@@ -2,6 +2,9 @@ FROM ruby:3.0.0
 
 ENV TZ Asia/Tokyo
 
+RUN apt-get update -qq \
+  && apt-get install -y vim
+
 WORKDIR /app
 
 COPY Gemfile /app/
